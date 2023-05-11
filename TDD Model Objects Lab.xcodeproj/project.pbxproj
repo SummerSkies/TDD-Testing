@@ -13,7 +13,19 @@
 		86BC16F92A0D329F00938BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BC16F72A0D329F00938BFC /* Main.storyboard */; };
 		86BC16FB2A0D32A000938BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BC16FA2A0D32A000938BFC /* Assets.xcassets */; };
 		86BC16FE2A0D32A000938BFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BC16FC2A0D32A000938BFC /* LaunchScreen.storyboard */; };
+		86BC17132A0D332200938BFC /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17122A0D332200938BFC /* PersonTest.swift */; };
+		86BC17152A0D33CE00938BFC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC17142A0D33CE00938BFC /* Person.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86BC170D2A0D32BA00938BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86BC16E62A0D329F00938BFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86BC16ED2A0D329F00938BFC;
+			remoteInfo = "TDD Model Objects Lab";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		86BC16EE2A0D329F00938BFC /* TDD Model Objects Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TDD Model Objects Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,20 @@
 		86BC16FA2A0D32A000938BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86BC16FD2A0D32A000938BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86BC16FF2A0D32A000938BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86BC17092A0D32BA00938BFC /* TDD Model Objects Lab Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD Model Objects Lab Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BC17122A0D332200938BFC /* PersonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = SOURCE_ROOT; };
+		86BC17142A0D33CE00938BFC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		86BC16EB2A0D329F00938BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86BC17062A0D32BA00938BFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				86BC16F02A0D329F00938BFC /* TDD Model Objects Lab */,
+				86BC170A2A0D32BA00938BFC /* TDD Model Objects Lab Tests */,
 				86BC16EF2A0D329F00938BFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				86BC16EE2A0D329F00938BFC /* TDD Model Objects Lab.app */,
+				86BC17092A0D32BA00938BFC /* TDD Model Objects Lab Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +80,7 @@
 		86BC16F02A0D329F00938BFC /* TDD Model Objects Lab */ = {
 			isa = PBXGroup;
 			children = (
+				86BC17142A0D33CE00938BFC /* Person.swift */,
 				86BC16F12A0D329F00938BFC /* AppDelegate.swift */,
 				86BC16F32A0D329F00938BFC /* SceneDelegate.swift */,
 				86BC16F52A0D329F00938BFC /* ViewController.swift */,
@@ -65,6 +90,14 @@
 				86BC16FF2A0D32A000938BFC /* Info.plist */,
 			);
 			path = "TDD Model Objects Lab";
+			sourceTree = "<group>";
+		};
+		86BC170A2A0D32BA00938BFC /* TDD Model Objects Lab Tests */ = {
+			isa = PBXGroup;
+			children = (
+				86BC17122A0D332200938BFC /* PersonTest.swift */,
+			);
+			path = "TDD Model Objects Lab Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = 86BC16EE2A0D329F00938BFC /* TDD Model Objects Lab.app */;
 			productType = "com.apple.product-type.application";
 		};
+		86BC17082A0D32BA00938BFC /* TDD Model Objects Lab Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86BC170F2A0D32BA00938BFC /* Build configuration list for PBXNativeTarget "TDD Model Objects Lab Tests" */;
+			buildPhases = (
+				86BC17052A0D32BA00938BFC /* Sources */,
+				86BC17062A0D32BA00938BFC /* Frameworks */,
+				86BC17072A0D32BA00938BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86BC170E2A0D32BA00938BFC /* PBXTargetDependency */,
+			);
+			name = "TDD Model Objects Lab Tests";
+			productName = "TDD Model Objects Lab Tests";
+			productReference = 86BC17092A0D32BA00938BFC /* TDD Model Objects Lab Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,11 @@
 				TargetAttributes = {
 					86BC16ED2A0D329F00938BFC = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					86BC17082A0D32BA00938BFC = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+						TestTargetID = 86BC16ED2A0D329F00938BFC;
 					};
 				};
 			};
@@ -116,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				86BC16ED2A0D329F00938BFC /* TDD Model Objects Lab */,
+				86BC17082A0D32BA00938BFC /* TDD Model Objects Lab Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +188,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86BC17072A0D32BA00938BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +204,28 @@
 			files = (
 				86BC16F62A0D329F00938BFC /* ViewController.swift in Sources */,
 				86BC16F22A0D329F00938BFC /* AppDelegate.swift in Sources */,
+				86BC17152A0D33CE00938BFC /* Person.swift in Sources */,
 				86BC16F42A0D329F00938BFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86BC17052A0D32BA00938BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86BC17132A0D332200938BFC /* PersonTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86BC170E2A0D32BA00938BFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86BC16ED2A0D329F00938BFC /* TDD Model Objects Lab */;
+			targetProxy = 86BC170D2A0D32BA00938BFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		86BC16F72A0D329F00938BFC /* Main.storyboard */ = {
@@ -334,6 +415,43 @@
 			};
 			name = Release;
 		};
+		86BC17102A0D32BA00938BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.TDD-Model-Objects-Lab-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD Model Objects Lab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDD Model Objects Lab";
+			};
+			name = Debug;
+		};
+		86BC17112A0D32BA00938BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.TDD-Model-Objects-Lab-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD Model Objects Lab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDD Model Objects Lab";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +469,15 @@
 			buildConfigurations = (
 				86BC17032A0D32A000938BFC /* Debug */,
 				86BC17042A0D32A000938BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86BC170F2A0D32BA00938BFC /* Build configuration list for PBXNativeTarget "TDD Model Objects Lab Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86BC17102A0D32BA00938BFC /* Debug */,
+				86BC17112A0D32BA00938BFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
